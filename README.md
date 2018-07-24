@@ -20,6 +20,9 @@ A tranform function callback can do the following operations:
 ## Usage
 
 ### CLI
+
+clone repo or use `go get github.com/rpip/boost`
+
 ```shell
 $ git clone git@github.com:rpip/boost
 $ cd boost && make deps && make
@@ -40,19 +43,6 @@ $ ./boostd < boost/testdata/ordered_driver_positions.json_dump
 {"created_at":"2016-12-14 08:18:47","id":10912,"lat":49.00975592361513,"lng":2.400408684983234}
 {"created_at":"2016-12-14 08:18:52","id":10331,"lat":48.64559215187843,"lng":2.342777276025095}
 {"created_at":"2016-12-14 08:18:54","id":1778,"lat":50.809599227526014,"lng":2.584064846519136}
-```
-
-### or assuming repo is at `github.com/rpip/boost`
-
-``` shell
-$ go get github.com/rpip/boost
-$ boostd -h
-Usage of boostd:
-  -n int
-        Max number of concurrent OUT streamers (default 4)
-  -r duration
-        burst rate (default 100ms)
-  -v    Enable Verbose logging (default true)
 ```
 
 ### As a library
